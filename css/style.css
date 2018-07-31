@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin: 0;
+    background: #fff;
+    height: auto;
+    position: relative;
+}
+
+h1 {
+    font-size: 4.5rem;
+    padding: 1rem;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+#pohileht {
+    max-width: 960px;
+    margin: auto;
+    /* background-color: #fff;
+    box-shadow: 30px 0px 500px rgba(0, 0, 0, 0.1), 
+    -30px 0px 500px rgba(0, 0, 0, 0.1); */
+}
+
+nav {
+    margin: auto;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 400;
+    /* -webkit-box-shadow: 0 8px 6px -6px #000;
+    -moz-box-shadow: 0 8px 6px -6px #000;
+    box-shadow: 0 8px 6px -6px #000; */
+}
+
+.navbar img {
+    height: 50px;
+}
+
+.navbar-custom {
+    background-color: rgba(0, 0, 0, .85);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+.nav-pills > li > a.active {
+    background-color: rgba(0, 0, 0, .55)!important;
+}
+
+.site-header a {
+    color: #fff;
+    transition: ease-in-out color .15s;
+  }
+.site-header a:hover {
+    color: #999;
+    text-decoration: none;
+  }
+
+/* video */
+.video-container {
+    position: relative;
+}
+
+video {
+    width: 100%;
+    /* Could also use width: 100%; */
+    height: 100vh;
+    object-fit: cover;
+    /* position: fixed; */
+    /* Change position to absolute if you don't want it to take up the whole page */
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+.video-container h1 {
+    color: white;
+    /* font-family: 'Nobile', sans-serif; */
+    font-size: 9vw;
+    text-align: center;
+}
+
+.overlay-desc {
+    background: rgba(0,0,0,0);
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay-desc h1 {
+    color: white;
+    /* font-family: 'Nobile', sans-serif; */
+    font-size: 9vw;
+    text-align: center;
+}
+
+.overlay-desc span {
+    color: white;
+    /* font-family: 'Nobile', sans-serif; */
+    font-size: 5vw;
+    text-align: center;
+}
+
+#landing-image {
+    background: url("../meedia/pildid/1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    color: white; 
+}
+
+.mob_nool {
+    width: 49px;
+    height: 49px;
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-top: 400px;
+    z-index: 9;
+    border-radius: 50%;
+    -webkit-transition: background-color 0.25s ease-in-out;
+    transition: background-color 0.25s ease-in-out;
+}
+
+/* galerii flex */
+.galerii {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-between;
+}
+
+.galerii a {
+  flex-grow: 1;
+  flex-basis: 100px;
+  max-width: 300px;
+  margin: 0.5rem;
+}
+
+/* bussid */
+.featurette-divider {
+    margin: 5rem 0;
+  }
+  
+.featurette-heading {
+    font-weight: 300;
+    font-size: 3rem;
+    line-height: 1;
+    letter-spacing: -.05rem;
+}
+
+#kontakt p {
+    text-align: center;
+}
+
+#kontakt a {
+    color: black;
+}
+
+#kontakt a:visited {
+    color: black;
+}
+
+#kontakt a:hover {
+    color: #333;
+}
+
+#facebook {
+    text-align: center;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    padding: 2.5rem 0;
+    background-color: #f9f9f9;
+    border-top: .05rem solid #e5e5e5;
+}
+
+.lopp {
+    padding-top: 3rem;
+}
+
+/* Leht 900px ja alla */
+@media(max-width: 900px) {
+    #pohileht {
+        padding-right: .75rem;
+        padding-left: .75rem;
+        display: inherit;
+    }
+    
+}
+@media(max-width:768px) { 
+    body { 
+        display: inherit; 
+    } 
+
+    body h1 {
+        font-size: 4.0rem;
+        font-weight: 500;
+    }
+
+    #bussid h2 {
+        font-size: 2.2rem;
+        
+    }
+
+    .overlay-desc h1 {
+        font-size: 15vw;
+        font-weight: 500;
+    }
+    
+    .overlay-desc span {
+        font-size: 10vw;
+        font-weight: 500;
+    }
+}
+
+/* reisid */
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+/* .container {
+    background: #f9f9f9;
+} */
+
+
+/* .nav-item a:hover {
+    color: white !important;
+    cursor: pointer;
+} */
+
+
+/* nool alla */
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.scroll-down {
+  opacity: 1;
+  -webkit-transition: all .5s ease-in 3s;
+  transition: all .5s ease-in 3s;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -26px;
+  display: block;
+  width: 64px;
+  height: 64px;
+  border: 2px solid #FFF;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.scroll-down:before {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 6px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border: 2px solid white;
+    border-width: 0px 0 2px 2px;
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
