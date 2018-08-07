@@ -14,11 +14,9 @@ use FormGuide\Handlx\FormHandler;
 $pp = new FormHandler(); 
 
 $validator = $pp->getValidator();
-$validator->fields(['name','email'])->areRequired()->maxLength(50);
+// $validator->fields(['name'])->areRequired()->maxLength(50);
 $validator->field('email')->isEmail();
 $validator->field('comments')->maxLength(6000);
-
-
 
 
 $pp->sendEmailTo('siim.pwn@gmail.com', 'info@joonasnilp.ee');

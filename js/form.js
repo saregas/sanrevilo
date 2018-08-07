@@ -1,7 +1,7 @@
 $(function() {
   function after_form_submitted(data) {
     if (data.result == "success") {
-      $("form#reused_form").hide();
+      $("form#tagasiside_vorm").hide();
       $("#success_message").show();
       $("#error_message").hide();
     } else {
@@ -26,7 +26,7 @@ $(function() {
     } //else
   }
 
-  $("#reused_form").submit(function(e) {
+  $("#tagasiside_vorm").submit(function(e) {
     e.preventDefault();
 
     $form = $(this);
