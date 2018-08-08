@@ -1,3 +1,5 @@
+// nav
+
 // algus > algus
 $("#navLogo").on("click", function() {
   const logo = $("#lehe_algus").position().top;
@@ -87,53 +89,9 @@ $("#navKontakt").on("click", function() {
 });
 
 // peida nav
-$(".nav-pills>li>a").on("click", function() {
+$(".navbar-nav>li>a").on("click", function() {
   $(".navbar-collapse").collapse("hide");
 });
-
-/* // ekraani suurus
-const getBrowserWidth = function() {
-    if(window.innerWidth < 991){
-        // Mobiil
-        return "sm"
-    } else {
-        // Tavaline
-        return "lg"
-    }
-};
-const device = getBrowserWidth();
-
-if(device === "sm") {
-    // fluid galerii
-    $(function () {
-        $('#galerii a').fluidbox({
-            viewportFill: 1,
-            loader: true
-        });
-    });
-    // fluid bussid
-    $(function () {
-        $('#bussid a').fluidbox({
-            viewportFill: 1,
-            loader: true
-        });
-    }); 
-} else {
-    // fluid galerii
-    $(function () {
-        $('#galerii a').fluidbox({
-            viewportFill: 0.8,
-            loader: true
-        });
-    });
-    // fluid bussid
-    $(function () {
-        $('#bussid a').fluidbox({
-            viewportFill: 0.8,
-            loader: true
-        });
-    });
-} */
 
 // galerii uus
 $(document).on("click", '[data-toggle="lightbox"]', function(event) {

@@ -47,7 +47,7 @@ h2 {
 }
 
 nav {
-  margin: auto;
+  /* margin: auto; */
   font-size: 1.5rem;
 }
 
@@ -56,14 +56,14 @@ nav {
 }
 
 .navbar-custom {
-  background-color: rgba(0, 0, 0, 0.85);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  backdrop-filter: saturate(180%) blur(20px);
+  background-color: #000;
+  /* -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px); */
 }
 
-.nav-pills > li > a.active {
+/* .nav-pills > li > a.active {
   background-color: rgba(0, 0, 0, 0.55) !important;
-}
+} */
 
 .site-header a {
   color: #fff;
