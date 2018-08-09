@@ -100,3 +100,12 @@ $(document).on("click", '[data-toggle="lightbox"]', function(event) {
     alwaysShowClose: true
   });
 });
+
+// registreeri
+function mitu_inimest(inimese_number) {
+  if (inimese_number === 1) {
+    inimese_number.style.display = "block";
+  } else {
+    inimese_number.style.display = "none";
+  }
+}

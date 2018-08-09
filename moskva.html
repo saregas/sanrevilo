@@ -43,9 +43,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="./index.html#bussid" id="navBussid">Bussid</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="./index.html#firmast" id="navFirmast">Firmast</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item active">
                         <a class="nav-link" href="./index.html#reisid" id="navReisid">Tulevased reisid</a>
                     </li>
@@ -211,6 +211,116 @@
                 </p>
             </div>
         </div>
+
+        <div id="registreeri" class="container">
+            <div class="d-flex justify-content-center">
+                <div>
+                    <form role="form" method="post" id="tagasiside_vorm">
+                        <!-- pealkiri -->
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <h3 class="text-center">Registreeri reisile</h3>
+                                <p>Täitke allolevad lahtrid ja võtame teiega ühendust esimesel võimalusel.</p>
+                            </div>
+                        </div>
+                        <!-- põhiosa -->
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <input type="text" class="form-control" id="telefon" name="telefon" placeholder="Telefoni number">
+                            </div>
+                        </div>
+                        <!-- inimesed -->
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01">Mitu inimest:</label>
+                            </div>
+                            <select class="custom-select" id="inputGroupSelect01" onchange="mitu_inimest(this.value)">
+                                <option selected>Vali...</option>
+                                <option value="1">Üks</option>
+                                <option value="2">Kaks</option>
+                                <option value="3">Kolm</option>
+                                <option value="4">Neli</option>
+                                <option value="5">Viis</option>
+                                <option value="6">Kuus</option>
+                                <!-- <option value="7">Seitse</option>
+                                <option value="8">Kaheksa</option>
+                                <option value="9">Üheksa</option>
+                                <option value="10">Kümme</option> -->
+                            </select>
+                        </div>
+                        <!-- sisu -->
+                        <div class="row">
+
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <p>Palun sisesta iga inimese ees ja perekonna nimi, et saaksime teha teile viisad</p>
+                            </div>
+                        </div>
+                        <!-- inimene 1 -->
+                        <div class="row nimi1">
+                            <label for="nimi_1" class="col-sm-1 col-form-label">1.</label>
+                            <div class="col-sm-11 form-group">
+                                <input type="text" class="form-control" id="nimi_1" name="nimi_1" placeholder="Ees- ja perekonnani">
+                            </div>
+
+                        </div>
+                        <!-- inimene 2 -->
+                        <div class="row nimi2">
+                            <label for="nimi_2" class="col-sm-1 col-form-label">2.</label>
+                            <div class="col-sm-11 form-group">
+                                <input type="text" class="form-control" id="nimi_2" name="nimi_2" placeholder="Ees- ja perekonnani">
+                            </div>
+                        </div>
+                        <!-- inimene 3 -->
+                        <div class="row nimi3">
+                            <label for="nimi_3" class="col-sm-1 col-form-label">3.</label>
+                            <div class="col-sm-11 form-group">
+                                <input type="text" class="form-control" id="nimi_3" name="nimi_3" placeholder="Ees- ja perekonnani">
+                            </div>
+                        </div>
+                        <!-- inimene 4 -->
+                        <div class="row nimi4">
+                            <label for="nimi_4" class="col-sm-1 col-form-label">4.</label>
+                            <div class="col-sm-11 form-group">
+                                <input type="text" class="form-control" id="nimi_4" name="nimi_4" placeholder="Ees- ja perekonnani">
+                            </div>
+
+                        </div>
+                        <!-- inimene 5 -->
+                        <div class="row nimi5">
+                            <label for="nimi_5" class="col-sm-1 col-form-label">5.</label>
+                            <div class="col-sm-11 form-group">
+                                <input type="text" class="form-control" id="nimi_5" name="nimi_5" placeholder="Ees- ja perekonnani">
+                            </div>
+                        </div>
+                        <!-- inimene 6 -->
+                        <div class="row nimi6">
+                            <label for="nimi_6" class="col-sm-1 col-form-label">6.</label>
+                            <div class="col-sm-11 form-group">
+                                <input type="text" class="form-control" id="nimi_6" name="nimi_6" placeholder="Ees- ja perekonnani">
+                            </div>
+                        </div>
+
+                        <!-- registreeri -->
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <button type="submit" class="btn btn-lg btn-primary btn-block">Registreeri &rarr;</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="success_message" style="width:100%; height:100%; display:none; ">
+                        <h3 class="text-center">Aitäh reisile registreerumast, võtame teiega peatselt ühendust!</h3>
+                    </div>
+                    <div id="error_message" style="width:100%; height:100%; display:none; ">
+                        <h3>Viga</h3> Vabandust, kuskil on probleem. Palun proovige uuesti.</div>
+                </div>
+            </div>
+        </div>
+
         <footer>
             <!-- Kontakt -->
             <br>
