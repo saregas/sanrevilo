@@ -1,7 +1,7 @@
 $(function() {
   function after_form_submitted(data) {
     if (data.result == "success") {
-      $("form#registreeri").hide();
+      $("form#registreeri_vorm").hide();
       $("#success_message").show();
       $("#error_message").hide();
     } else {
@@ -26,7 +26,7 @@ $(function() {
     } //else
   }
 
-  $("#registreeri").submit(function(e) {
+  $("#registreeri_vorm").submit(function(e) {
     e.preventDefault();
 
     $form = $(this);
