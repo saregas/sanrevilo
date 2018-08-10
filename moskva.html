@@ -226,10 +226,10 @@
                         <!-- põhiosa -->
                         <div class="row">
                             <div class="col-sm-6 form-group">
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
                             </div>
                             <div class="col-sm-6 form-group">
-                                <input type="text" class="form-control" id="telefon" name="telefon" placeholder="Telefoni number">
+                                <input type="text" class="form-control" id="telefon" name="telefon" placeholder="Telefoni number" required>
                             </div>
                         </div>
                         <!-- inimesed -->
@@ -237,7 +237,7 @@
                             <div class="input-group-prepend">
                                 <label class="input-group-text" for="inputGroupSelect01">Mitu inimest:</label>
                             </div>
-                            <select class="custom-select" id="inputGroupSelect01" onchange="mitu_inimest(this.value)">
+                            <select required class="custom-select" id="inputGroupSelect01">
                                 <option selected>Vali...</option>
                                 <option value="1">Üks</option>
                                 <option value="2">Kaks</option>
@@ -245,66 +245,19 @@
                                 <option value="4">Neli</option>
                                 <option value="5">Viis</option>
                                 <option value="6">Kuus</option>
-                                <!-- <option value="7">Seitse</option>
+                                <option value="7">Seitse</option>
                                 <option value="8">Kaheksa</option>
                                 <option value="9">Üheksa</option>
-                                <option value="10">Kümme</option> -->
+                                <option value="10">Kümme</option>
                             </select>
                         </div>
                         <!-- sisu -->
                         <div class="row">
-
-                        </div>
-                        <div class="row">
                             <div class="col-sm-12 form-group">
-                                <p>Palun sisesta iga inimese ees ja perekonna nimi, et saaksime teha teile viisad</p>
+                                <p>Samuti läheb viisa jaoks vaja iga inimese portree fotod, ees ja perekonna nime,
+                                    <br>võtame teiega emaili või telefoni teel ühendust selles osas.</p>
                             </div>
                         </div>
-                        <!-- inimene 1 -->
-                        <div class="row nimi1">
-                            <label for="nimi_1" class="col-sm-1 col-form-label">1.</label>
-                            <div class="col-sm-11 form-group">
-                                <input type="text" class="form-control" id="nimi_1" name="nimi_1" placeholder="Ees- ja perekonnani">
-                            </div>
-
-                        </div>
-                        <!-- inimene 2 -->
-                        <div class="row nimi2">
-                            <label for="nimi_2" class="col-sm-1 col-form-label">2.</label>
-                            <div class="col-sm-11 form-group">
-                                <input type="text" class="form-control" id="nimi_2" name="nimi_2" placeholder="Ees- ja perekonnani">
-                            </div>
-                        </div>
-                        <!-- inimene 3 -->
-                        <div class="row nimi3">
-                            <label for="nimi_3" class="col-sm-1 col-form-label">3.</label>
-                            <div class="col-sm-11 form-group">
-                                <input type="text" class="form-control" id="nimi_3" name="nimi_3" placeholder="Ees- ja perekonnani">
-                            </div>
-                        </div>
-                        <!-- inimene 4 -->
-                        <div class="row nimi4">
-                            <label for="nimi_4" class="col-sm-1 col-form-label">4.</label>
-                            <div class="col-sm-11 form-group">
-                                <input type="text" class="form-control" id="nimi_4" name="nimi_4" placeholder="Ees- ja perekonnani">
-                            </div>
-
-                        </div>
-                        <!-- inimene 5 -->
-                        <div class="row nimi5">
-                            <label for="nimi_5" class="col-sm-1 col-form-label">5.</label>
-                            <div class="col-sm-11 form-group">
-                                <input type="text" class="form-control" id="nimi_5" name="nimi_5" placeholder="Ees- ja perekonnani">
-                            </div>
-                        </div>
-                        <!-- inimene 6 -->
-                        <div class="row nimi6">
-                            <label for="nimi_6" class="col-sm-1 col-form-label">6.</label>
-                            <div class="col-sm-11 form-group">
-                                <input type="text" class="form-control" id="nimi_6" name="nimi_6" placeholder="Ees- ja perekonnani">
-                            </div>
-                        </div>
-
                         <!-- registreeri -->
                         <div class="row">
                             <div class="col-sm-12 form-group">
@@ -327,7 +280,7 @@
             <br>
             <br>
             <div id="kontakt">
-                <h1>Tellimine</h1>
+                <h1>Kontakt</h1>
                 <p>Email:
                     <strong>info@sanrevilo.ee</strong>
                 </p>
@@ -355,6 +308,7 @@
         crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
     <script src="js/smooth.js"></script>
+    <script src="../js/moskva.js"></script>
     <!-- <script src="js/jquery.ba-throttle-debounce.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
