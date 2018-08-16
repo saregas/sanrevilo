@@ -49,8 +49,12 @@ nav {
   font-size: 1.5rem;
 }
 
-.navbar img {
+.nav_logo {
   height: 50px;
+}
+
+.keel img {
+  margin-top: 14px;
 }
 
 .navbar-custom {

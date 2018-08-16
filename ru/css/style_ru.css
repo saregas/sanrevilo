@@ -1,0 +1,17 @@
+.kuupaev_ru {
+  display: none;
+}
+@media (max-width: 900px) {
+  #bussid > h1 {
+    font-size: 2.8rem;
+  }
+  #reisid > h1 {
+    font-size: 2.2rem;
+  }
+  .kuupaev {
+    display: none;
+  }
+  .kuupaev_ru {
+    display: block;
+  }
+}
