@@ -1,196 +1,148 @@
 <!DOCTYPE html>
 <html lang="ee">
-  <head>
-    <!-- põhi meta -->
-    <meta charset="utf-8" />
-    <title>San Revilo OÜ</title>
-    <meta name="description" content="Bussireisid" />
-    <meta name="author" content="San Revilo OÜ" />
-    <!-- facebook -->
-    <meta property="og:title" content="San Revilo OÜ" />
-    <meta property="og:description" content="Bussireisid" />
-    <meta
-      property="og:image"
-      content="http://sanrevilo.ee/meedia/pildid/1.jpg"
-    />
-    <meta property="og:url" content="http://sanrevilo.ee/index.html" />
-    <meta property="og:type" content="San Revilo koduleht" />
-    <!-- muu -->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-      crossorigin="anonymous"
-    />
-    <link href="css/style.css" rel="stylesheet" />
-    <!-- galerii -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
-      rel="stylesheet"
-    />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-368848-5"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
 
-      gtag("config", "UA-368848-5");
-    </script>
-  </head>
+<head>
+  <!-- põhi meta -->
+  <meta charset="utf-8" />
+  <title>San Revilo OÜ</title>
+  <meta name="description" content="Bussireisid" />
+  <meta name="author" content="San Revilo OÜ" />
+  <!-- facebook -->
+  <meta property="og:title" content="San Revilo OÜ" />
+  <meta property="og:description" content="Bussireisid" />
+  <meta property="og:image" content="http://sanrevilo.ee/meedia/pildid/1.jpg" />
+  <meta property="og:url" content="http://sanrevilo.ee/index.html" />
+  <meta property="og:type" content="San Revilo koduleht" />
+  <!-- muu -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" />
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- galerii -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" rel="stylesheet" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-368848-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-  <!-- Kere -->
+    gtag("config", "UA-368848-5");
+  </script>
+</head>
 
-  <body
-    data-spy="scroll"
-    data-target=".navbar"
-    data-offset="100"
-    id="lehe_algus"
-  >
-    <!-- navigatsioon -->
-    <nav
-      class="navbar navbar-custom  navbar-expand-md navbar-dark fixed-top site-header py-0"
-    >
-      <a class="navbar-brand mx-auto" href="#logo" id="navLogo">
-        <img class="nav_logo" src="meedia/logod/logo_edit.png" alt="logo" />
-      </a>
-      <!-- mobiil -->
-      <button
-        class="navbar-toggler navbar-toggler-right"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarCollapse"
-        aria-controls="navbarCollapse"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- tava -->
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="nav navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#reisid" id="navReisid"
-              >Tulevased reisid</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#bussid" id="navBussid">Bussid</a>
-          </li>
-          <!-- <li class="nav-item">
+<!-- Kere -->
+
+<body data-spy="scroll" data-target=".navbar" data-offset="100" id="lehe_algus">
+  <!-- navigatsioon -->
+  <nav class="navbar navbar-custom  navbar-expand-md navbar-dark fixed-top site-header py-0">
+    <a class="navbar-brand mx-auto" href="#logo" id="navLogo">
+      <img class="nav_logo" src="meedia/logod/logo_edit.png" alt="logo" />
+    </a>
+    <!-- mobiil -->
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+      data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- tava -->
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#reisid" id="navReisid">Tulevased reisid</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#bussid" id="navBussid">Bussid</a>
+        </li>
+        <!-- <li class="nav-item">
           <a class="nav-link" href="#firmast" id="navFirmast">Firmast</a>
         </li> -->
 
-          <li class="nav-item">
-            <a class="nav-link" href="#kontakt" id="navKontakt">Tellimine</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="tagasiside/" id="navTagasi">Tagasiside</a>
-          </li>
-          <li>
-            <a href="ru/index.html" class="keel"
-              ><img src="./meedia/lang/rus.png" alt="Vene"
-            /></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!-- main -->
-    <main role="main">
-      <!-- desktop video -->
-      <div id="intro_video">
-        <div class="video-container">
-          <video autoplay loop muted poster="meedia/buss.jpg" preload="auto">
-            <source src="meedia/video/intro.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <!-- <div class="overlay-desc">
+        <li class="nav-item">
+          <a class="nav-link" href="#kontakt" id="navKontakt">Tellimine</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tagasiside/" id="navTagasi">Tagasiside</a>
+        </li>
+        <li>
+          <a href="ru/index.html" class="keel"><img src="./meedia/lang/rus.png" alt="Vene" /></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- main -->
+  <main role="main">
+    <!-- desktop video -->
+    <div id="intro_video">
+      <div class="video-container">
+        <video autoplay loop muted poster="meedia/buss.jpg" preload="auto">
+          <source src="meedia/video/intro.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <!-- <div class="overlay-desc">
           <h1>San Revilo</h1>
         </div> -->
-          <a href="#reisid" class="scroll-down" address="true"></a>
-        </div>
+        <a href="#reisid" class="scroll-down" address="true"></a>
       </div>
-      <!-- Saabumis pilt -->
-      <div id="landing">
-        <div id="landing-image">
-          <!-- Nool põhilehele -->
-          <a href="#reisid" class="scroll-down" address="true"></a>
-        </div>
+    </div>
+    <!-- Saabumis pilt -->
+    <div id="landing">
+      <div id="landing-image">
+        <!-- Nool põhilehele -->
+        <a href="#reisid" class="scroll-down" address="true"></a>
       </div>
-      <!-- Alusta sisuga -->
+    </div>
+    <!-- Alusta sisuga -->
 
-      <!-- tulevased reisid -->
-      <div id="pohileht" class="container">
-        <div id="reisid">
-          <br />
-          <br />
-          <h1>Tulevased reisid</h1>
+    <!-- tulevased reisid -->
+    <div id="pohileht" class="container">
+      <div id="reisid">
+        <br />
+        <br />
+        <h1>Tulevased reisid</h1>
 
-          <div class="d-flex justify-content-center">
-            <div class="col-md-8 ">
-              <div class="card box-shadow">
-                <img
-                  class="card-img-top"
-                  src="meedia/reisid/Amsterdam.jpg"
-                  alt="Holland"
-                />
-                <div class="card-body">
-                  <h3 class="card-text">
-                    VÕRKPALLI EUROOPA MEISTRIVõISTLUSED HOLLANDIS
-                  </h3>
-                  <p>Tule ela kaasa Eesti võrkpallikoondisele!</p>
-                  <div class="d-flex justify-content-between ">
-                    <a
-                      class="btn btn-outline-dark"
-                      href="./holland/"
-                      role="button"
-                      >Rohkem infot</a
-                    >
-                    <small class="text-muted">11.-20. SEPTEMBER 2019</small>
-                  </div>
+        <div class="d-flex justify-content-center">
+          <div class="col-md-8 ">
+            <div class="card box-shadow">
+              <img class="card-img-top" src="meedia/reisid/Amsterdam.jpg" alt="Holland" />
+              <div class="card-body">
+                <h3 class="card-text">
+                  VÕRKPALLI EUROOPA MEISTRIVõISTLUSED HOLLANDIS
+                </h3>
+                <p>Tule ela kaasa Eesti võrkpallikoondisele!</p>
+                <div class="d-flex justify-content-between ">
+                  <a class="btn btn-outline-dark" href="./holland/" role="button">Rohkem infot</a>
+                  <small class="text-muted">11.-20. SEPTEMBER 2019</small>
                 </div>
               </div>
             </div>
           </div>
-          <br />
         </div>
+        <br />
+      </div>
 
-        <!-- bussid -->
-        <div id="bussid">
-          <br />
-          <br />
-          <h1>Bussid</h1>
-          <div class="row featurette">
-            <div class="col-md-7">
-              <h2 class="featurette-heading">Scania Irizar Century</h2>
-              <p class="lead">
-                Väga hubane ja ridamisi mugavustega reisijate vedamiseks mõeldud
-                transpordivahend.
-              </p>
-              <p>
-                <button
-                  class="btn btn-outline-dark"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#buss1"
-                  aria-expanded="false"
-                  aria-controls="buss1"
-                >
-                  Rohkem infot
-                </button>
-              </p>
-              <div class="collapse" id="buss1">
-                <div class="card card-body bg-light">
-                  <!-- <div class="container">
+      <!-- bussid -->
+      <div id="bussid">
+        <br />
+        <br />
+        <h1>Bussid</h1>
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Scania Irizar Century</h2>
+            <p class="lead">
+              Väga hubane ja ridamisi mugavustega reisijate vedamiseks mõeldud
+              transpordivahend.
+            </p>
+            <p>
+              <button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#buss1"
+                aria-expanded="false" aria-controls="buss1">
+                Rohkem infot
+              </button>
+            </p>
+            <div class="collapse" id="buss1">
+              <div class="card card-body bg-light">
+                <!-- <div class="container">
                   <div class="row">
                     <div class="col-6">
                       <a href="meedia/pildid/iri1.jpg" data-toggle="lightbox" data-gallery="buss1">
@@ -205,247 +157,184 @@
                   </div>
                 </div>
                 <br> -->
-                  <ul>
-                    <li>
-                      49 magamistooli reguleeritava seljatoe ja istmete vahelise
-                      laiusega. Lisaks söögilaud ja jalatugi
-                    </li>
-                    <li>
-                      väga mugav giidi töökoht. Nahast iste käetugedega ja
-                      peatoega. Lisaks mikrofon ja lamp
-                    </li>
-                    <li>
-                      vajadusteks WC, köök, külmkapp ja 230V (mitte
-                      triikimiseks)
-                    </li>
-                    <li>meelelahutuseks CD, DVD ja VHS koos kahe monitoriga</li>
-                    <li>
-                      täisautomaatne sisekliima lähtuvalt keskmise reisija
-                      soovist
-                    </li>
-                    <li>
-                      pikematel reisidel service funktsiooni abil varu bussijuhi
-                      teenused
-                    </li>
-                    <li>
-                      ekslikud marsruudist kõrvalekaldumised nullilähedased tänu
-                      kaarditöö kogemustele ja dubleeritud GPS seadmetele
-                    </li>
-                  </ul>
-                  <p class="text-primary">
-                    Marsruudi koostamisel kõrguse piirang 3,7m. Pikkus 12m.
-                    Pagasi ja reisijate mass max. 4,5t.
-                  </p>
-                </div>
+                <ul>
+                  <li>
+                    49 magamistooli reguleeritava seljatoe ja istmete vahelise
+                    laiusega. Lisaks söögilaud ja jalatugi
+                  </li>
+                  <li>
+                    väga mugav giidi töökoht. Nahast iste käetugedega ja
+                    peatoega. Lisaks mikrofon ja lamp
+                  </li>
+                  <li>
+                    vajadusteks WC, köök, külmkapp ja 230V (mitte
+                    triikimiseks)
+                  </li>
+                  <li>meelelahutuseks CD, DVD ja VHS koos kahe monitoriga</li>
+                  <li>
+                    täisautomaatne sisekliima lähtuvalt keskmise reisija
+                    soovist
+                  </li>
+                  <li>
+                    pikematel reisidel service funktsiooni abil varu bussijuhi
+                    teenused
+                  </li>
+                  <li>
+                    ekslikud marsruudist kõrvalekaldumised nullilähedased tänu
+                    kaarditöö kogemustele ja dubleeritud GPS seadmetele
+                  </li>
+                </ul>
+                <p class="text-primary">
+                  Marsruudi koostamisel kõrguse piirang 3,7m. Pikkus 12m.
+                  Pagasi ja reisijate mass max. 4,5t.
+                </p>
               </div>
             </div>
-            <div class="col-md-5">
-              <a
-                href="meedia/pildid/iri1.jpg"
-                data-toggle="lightbox"
-                data-title="Scania Irizar Century"
-              >
-                <img
-                  src="meedia/pildid/iri1.jpg"
-                  class="img-fluid shadow rounded img-thumbnail"
-                />
-              </a>
-            </div>
           </div>
-          <hr class="featurette-divider" />
-          <div class="row featurette">
-            <div class="col-md-7 order-md-2">
-              <h2 class="featurette-heading">Scania Interlink</h2>
-              <p class="lead">
-                Ideaalne sõiduvahend reisijate vedamiseks olenemata vahemaadest
-              </p>
-              <p>
-                <button
-                  class="btn btn-outline-dark"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#buss2"
-                  aria-expanded="false"
-                  aria-controls="buss1"
-                >
-                  Rohkem infot
-                </button>
-              </p>
-              <div class="collapse" id="buss2">
-                <div class="card card-body bg-light">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-6">
-                        <a
-                          href="meedia/pildid/int1.jpg"
-                          data-toggle="lightbox"
-                          data-gallery="buss2"
-                        >
-                          <img
-                            class="img-fluid  img-thumbnail rounded"
-                            src="meedia/pildid/int1.jpg"
-                          />
-                        </a>
-                      </div>
-                      <div class="col-6">
-                        <a
-                          href="meedia/pildid/int2.jpg"
-                          data-toggle="lightbox"
-                          data-gallery="buss2"
-                        >
-                          <img
-                            class="img-fluid  img-thumbnail rounded"
-                            src="meedia/pildid/int2.jpg"
-                          />
-                        </a>
-                      </div>
-                      <div class="col-6">
-                        <a
-                          href="meedia/pildid/int3.jpg"
-                          data-toggle="lightbox"
-                          data-gallery="buss2"
-                        >
-                          <img
-                            class="img-fluid  img-thumbnail rounded"
-                            src="meedia/pildid/int3.jpg"
-                          />
-                        </a>
-                      </div>
-                      <div class="col-6">
-                        <a
-                          href="meedia/pildid/int5.jpg"
-                          data-toggle="lightbox"
-                          data-gallery="buss2"
-                        >
-                          <img
-                            class="img-fluid  img-thumbnail rounded"
-                            src="meedia/pildid/int5.jpg"
-                          />
-                        </a>
-                      </div>
+          <div class="col-md-5">
+            <a href="meedia/pildid/iri1.jpg" data-toggle="lightbox" data-title="Scania Irizar Century">
+              <img src="meedia/pildid/iri1.jpg" class="img-fluid shadow rounded img-thumbnail" />
+            </a>
+          </div>
+        </div>
+        <hr class="featurette-divider" />
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Scania Interlink</h2>
+            <p class="lead">
+              Ideaalne sõiduvahend reisijate vedamiseks olenemata vahemaadest
+            </p>
+            <p>
+              <button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#buss2"
+                aria-expanded="false" aria-controls="buss1">
+                Rohkem infot
+              </button>
+            </p>
+            <div class="collapse" id="buss2">
+              <div class="card card-body bg-light">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-6">
+                      <a href="meedia/pildid/int1.jpg" data-toggle="lightbox" data-gallery="buss2">
+                        <img class="img-fluid  img-thumbnail rounded" src="meedia/pildid/int1.jpg" />
+                      </a>
+                    </div>
+                    <div class="col-6">
+                      <a href="meedia/pildid/int2.jpg" data-toggle="lightbox" data-gallery="buss2">
+                        <img class="img-fluid  img-thumbnail rounded" src="meedia/pildid/int2.jpg" />
+                      </a>
+                    </div>
+                    <div class="col-6">
+                      <a href="meedia/pildid/int3.jpg" data-toggle="lightbox" data-gallery="buss2">
+                        <img class="img-fluid  img-thumbnail rounded" src="meedia/pildid/int3.jpg" />
+                      </a>
+                    </div>
+                    <div class="col-6">
+                      <a href="meedia/pildid/int5.jpg" data-toggle="lightbox" data-gallery="buss2">
+                        <img class="img-fluid  img-thumbnail rounded" src="meedia/pildid/int5.jpg" />
+                      </a>
                     </div>
                   </div>
-                  <br />
-                  <ul>
-                    <li>
-                      49 magamistooli reguleeritava seljatoe ja istmete vahelise
-                      laiusega. Lisaks söögilaud ja jalatugi
-                    </li>
-                    <li>
-                      väga mugav giidi töökoht. Nahast iste käetugedega ja
-                      peatoega. Lisaks mikrofon ja lamp
-                    </li>
-                    <li>
-                      vajadusteks WC, köök, külmkapp ja 230V (mitte
-                      triikimiseks)
-                    </li>
-                    <li>meelelahutuseks CD, DVD ja VHS koos kahe monitoriga</li>
-                    <li>
-                      täisautomaatne sisekliima lähtuvalt keskmise reisija
-                      soovist
-                    </li>
-                    <li>
-                      pikematel reisidel service funktsiooni abil varu bussijuhi
-                      teenused
-                    </li>
-                    <li>
-                      ekslikud marsruudist kõrvalekaldumised nullilähedased tänu
-                      kaarditöö kogemustele ja dubleeritud GPS seadmetele
-                    </li>
-                  </ul>
-                  <p class="text-primary">
-                    Marsruudi koostamisel kõrguse piirang 3,7m. Pikkus 12m.
-                    Pagasi ja reisijate mass max. 4,5t.
-                  </p>
                 </div>
+                <br />
+                <ul>
+                  <li>
+                    49 magamistooli reguleeritava seljatoe ja istmete vahelise
+                    laiusega. Lisaks söögilaud ja jalatugi
+                  </li>
+                  <li>
+                    väga mugav giidi töökoht. Nahast iste käetugedega ja
+                    peatoega. Lisaks mikrofon ja lamp
+                  </li>
+                  <li>
+                    vajadusteks WC, köök, külmkapp ja 230V (mitte
+                    triikimiseks)
+                  </li>
+                  <li>meelelahutuseks CD, DVD ja VHS koos kahe monitoriga</li>
+                  <li>
+                    täisautomaatne sisekliima lähtuvalt keskmise reisija
+                    soovist
+                  </li>
+                  <li>
+                    pikematel reisidel service funktsiooni abil varu bussijuhi
+                    teenused
+                  </li>
+                  <li>
+                    ekslikud marsruudist kõrvalekaldumised nullilähedased tänu
+                    kaarditöö kogemustele ja dubleeritud GPS seadmetele
+                  </li>
+                </ul>
+                <p class="text-primary">
+                  Marsruudi koostamisel kõrguse piirang 3,7m. Pikkus 12m.
+                  Pagasi ja reisijate mass max. 4,5t.
+                </p>
               </div>
             </div>
-            <div class="col-md-5 order-md-1">
-              <a
-                href="meedia/pildid/int4.jpg"
-                data-toggle="lightbox"
-                data-title="Scania Interlink"
-              >
-                <img
-                  src="meedia/pildid/int4.jpg"
-                  class="img-fluid shadow rounded img-thumbnail"
-                />
-              </a>
-            </div>
           </div>
-          <hr class="featurette-divider" />
+          <div class="col-md-5 order-md-1">
+            <a href="meedia/pildid/int4.jpg" data-toggle="lightbox" data-title="Scania Interlink">
+              <img src="meedia/pildid/int4.jpg" class="img-fluid shadow rounded img-thumbnail" />
+            </a>
+          </div>
         </div>
+        <hr class="featurette-divider" />
+      </div>
 
-        <!-- firmast -->
-        <!-- <div id="firmast">
+      <!-- firmast -->
+      <!-- <div id="firmast">
         <br>
         <br>
         <h1>Firmast
         </h1>
       </div> -->
-      </div>
+    </div>
 
-      <footer>
-        <!-- Kontakt -->
-        <br />
-        <br />
-        <br />
-        <div id="kontakt">
-          <h1>Tellimine</h1>
-          <p>
-            Email:
-            <strong>info@sanrevilo.ee</strong>
-          </p>
-          <p>
-            Telefon:
-            <strong> <span class="text-muted">+372</span> 53426696</strong>
-          </p>
-          <div id="facebook">
-            <a
-              class=""
-              target="noopener noreferrer"
-              href="https://www.facebook.com/SanRevilo/"
-            >
-              <img src="meedia/logod/facebook.png" alt="Facebook" />
-            </a>
-            <p>Facebook</p>
-          </div>
-          <!-- <hr class="sub" /> -->
-          <div class="lopp">
-            <p>&copy; 2018 San Revilo</p>
-            <p>
-              <a
-                href="#lehe_algus"
-                id="tagasi-ules"
-                class="btn btn-outline-dark"
-                >Tagasi üles</a
-              >
-            </p>
-          </div>
+    <footer>
+      <!-- Kontakt -->
+      <br />
+      <br />
+      <br />
+      <div id="kontakt">
+        <h1>Tellimine</h1>
+        <p>
+          Email:
+          <strong>info@sanrevilo.ee</strong>
+        </p>
+        <p>
+          Telefon:
+          <strong> <span class="text-muted">+372</span> 53426696</strong>
+        </p>
+        <div id="facebook">
+          <a class="" target="noopener noreferrer" href="https://www.facebook.com/SanRevilo/">
+            <img src="meedia/logod/facebook.png" alt="Facebook" />
+          </a>
+          <p>Facebook</p>
         </div>
-      </footer>
-    </main>
+        <!-- <hr class="sub" /> -->
+        <div class="lopp">
+          <p>&copy; 2018 San Revilo</p>
+          <p>
+            <a href="#lehe_algus" id="tagasi-ules" class="btn btn-outline-dark">Tagasi üles</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </main>
 
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/script.js"></script>
-    <script src="js/smooth.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-      crossorigin="anonymous"
-    ></script>
-    <!-- galerii -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
-    <!-- navbar -->
-    <!-- <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script> -->
-  </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+  <script src="js/smooth.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+  <!-- galerii -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+  <!-- navbar -->
+  <!-- <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script> -->
+</body>
+
 </html>
