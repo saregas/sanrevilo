@@ -7,7 +7,7 @@ $("#navLogo").on("click", function() {
     {
       scrollTop: logo
     },
-    900
+    300
   );
 });
 
@@ -18,18 +18,18 @@ $("#tagasi-ules").on("click", function() {
     {
       scrollTop: algus
     },
-    900
+    300
   );
 });
 
 // nool alla > Bussid
 $(".scroll-down").on("click", function() {
-  const bussid = $("#bussid").position().top;
+  const bussid = $("#reisid").position().top;
   $("html, body").animate(
     {
       scrollTop: bussid
     },
-    900
+    300
   );
 });
 
@@ -40,7 +40,7 @@ $("#navBussid").on("click", function() {
     {
       scrollTop: bussid
     },
-    900
+    300
   );
 });
 
@@ -51,7 +51,7 @@ $("#navGalerii").on("click", function() {
     {
       scrollTop: galerii
     },
-    900
+    300
   );
 });
 
@@ -62,7 +62,7 @@ $("#navFirmast").on("click", function() {
     {
       scrollTop: firmast
     },
-    900
+    300
   );
 });
 
@@ -73,7 +73,7 @@ $("#navReisid").on("click", function() {
     {
       scrollTop: reisid
     },
-    900
+    300
   );
 });
 
@@ -84,7 +84,7 @@ $("#navKontakt").on("click", function() {
     {
       scrollTop: kontakt
     },
-    900
+    300
   );
 });
 
