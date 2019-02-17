@@ -42,11 +42,11 @@ class FormHandler
 		$this->mailer = new PHPMailer;
 		$this->mail_template='';
 
-		$this->mailer->Subject = "Tagasiside ";
+		$this->mailer->Subject = "Tagasiside";
 
 		$host = isset($_SERVER['SERVER_NAME'])?$_SERVER['SERVER_NAME']:'localhost';
         $from_email ='forms@'.$host;
-   		$this->mailer->setFrom($from_email,'Contact Form',false);  
+   		$this->mailer->setFrom($from_email,'SanRevilo',false);  
 
    		$this->captcha = false;   
 
@@ -258,7 +258,7 @@ class FormHandler
 
 	private function compose_mail($post)
 	{
-		$content = "Form submission: \n\n";
+		$content = "Kirja sisu: \n\n";
 		foreach($post as $name=>$value)
 		{
 			$content .= ucwords($name).":\n";
